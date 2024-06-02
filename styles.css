@@ -38,10 +38,8 @@ header {
 }
 
 .bokita {
-  padding: 25px;
-  height: 5000px;
+  padding: 30px;
   width: 100%;
-  height: fit-content;
   animation: bokita 4s infinite 0s linear reverse;
 }
 
@@ -55,7 +53,7 @@ header {
 }
 
 .boca {
-  width: 6.1%;
+  width: 130px;
 }
 
 .nav-list {
