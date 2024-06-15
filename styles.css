@@ -1,5 +1,16 @@
 :root {
   --background: yellow;
+  --price: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
@@ -31,6 +42,8 @@ header {
   /* background: var(--background); */
   font-size: 20px;
 }
+
+/* nav.bar */
 
 .nav-bar,
 .nav-list {
@@ -76,6 +89,8 @@ a {
   gap: 50px;
 }
 
+/* Descripcion */
+
 .Intro {
   display: flex;
   justify-content: center;
@@ -96,6 +111,8 @@ a {
   color: black;
 }
 
+/* Indumentaria M/F* */
+
 .jugador {
   display: flex;
   justify-content: center;
@@ -108,7 +125,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  gap: 50px;
+  gap: 30px;
   width: 500px;
   height: 500px;
 }
@@ -130,20 +147,91 @@ a {
 }
 
 .genera {
-  max-width: 30%;
+  max-width: 60%;
   font-size: 30px;
 }
 
+/* Secciones/Ofertas */
+
 .ofertas {
+  display: flex;
   width: 100%;
-  height: 400px;
-  background: red;
 }
 
 .encabezado {
-  width: 20%;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgb(238, 255, 0);
+  width: 200px;
   font-size: 2rem;
-  background: blue;
-  text-align: start;
-  color: transparent;
+}
+
+.casacas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+}
+
+.oferta1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  background-color: var(--price);
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+.una {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.tres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.categorias {
+  display: flex;
+  padding: 70px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 1.5rem;
+  color: var(--background);
+  font-weight: bold;
+  background-color: var(--price);
+  padding: 10px 20px;
+  border-radius: 20px;
 }
