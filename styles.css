@@ -30,6 +30,19 @@ body {
     rgba(255, 226, 0, 1) 53%,
     rgba(2, 0, 36, 1) 85%
   );
+
+  animation: fondito 2s alternate infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes fondito {
+  0% {
+    background-position: 0% 20%;
+  }
+
+  100% {
+    background-position: 100% 36%;
+  }
 }
 
 header {
@@ -69,7 +82,7 @@ a {
 .bokita {
   padding: 30px;
   width: 100%;
-  animation: bokita 4s infinite 0s linear reverse;
+  animation: bokita 4s infinite alternate;
 }
 
 @keyframes bokita {
@@ -108,7 +121,7 @@ a {
 .descripcion {
   width: 40%;
   font-size: 3rem;
-  color: black;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 /* Indumentaria M/F* */
@@ -139,6 +152,19 @@ a {
   border-radius: 20px;
   max-width: 50%;
 }
+
+/*------------------ TRANSICION INDUMENTARIA ------------- */
+
+.transision {
+  transition: all 1s;
+}
+
+.transision:hover {
+  width: 1200px;
+  height: 110%;
+  transition: all 2s;
+}
+
 .container,
 .genero {
   flex-direction: column;
@@ -177,6 +203,8 @@ a {
   width: 100%;
   gap: 60px;
 }
+
+/* OFERTAS AHORA */
 
 .oferta1 {
   flex-direction: column;
@@ -218,6 +246,8 @@ span {
   align-items: center;
   width: 350px;
 }
+
+/* CATEGORIAS */
 
 .categorias {
   display: flex;
